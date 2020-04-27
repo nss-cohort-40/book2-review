@@ -2,7 +2,7 @@
 
 let searchInput = document.querySelector("#search-input")
 
-document.querySelector("#search-results").addEventListener("click", (event) => {
+document.querySelector("#search-btn").addEventListener("click", (event) => {
   getAPIFood(searchInput.value)
   .then( (foodData) => {
     // Remove any previous search results from the element where the search results go
